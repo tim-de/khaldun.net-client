@@ -22,7 +22,11 @@ jobs:
   build:
     name: build-windows
     runs-on: windows-latest
-
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
+      
     steps:
     - name: Checkout the repository
       id: checkout
