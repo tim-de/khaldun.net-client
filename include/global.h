@@ -335,10 +335,13 @@ __forceinline static int gs_copy_string(char* dst, const char* src) {
         s = p+8;
         continue;
       }
-      p[0] = 'o';
-      p[1] = 'p';
-      p[2] = 'e';
-      p[3] = 'n';
+      p[0] = 'k';
+      p[1] = 'h';
+      p[2] = 'a';
+      p[3] = 'l';
+      p[4] = 'd';
+      p[5] = 'u';
+      p[6] = 'n';
       s = p+11;
     }
     return 1;
