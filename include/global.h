@@ -352,7 +352,7 @@ __forceinline static int fesl_copy_string(char* dst, const char* src) {
     p += 5;
     unsigned int len = (((p-src) > 500) ? 500 : (p-src));
     __strncpy(dst, src, len);
-    __strcpy(dst+len, "openspy.net");
+    __strcpy(dst+len, "khaldun.net");
     return 1;
   }
   return 0;
