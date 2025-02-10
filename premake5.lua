@@ -34,7 +34,7 @@ project "openspy-client"
   language "C"
   targetextension ".dll"
   targetdir "bin"
-  files { "dllmain.c", "include/*.h", "iathook/iathook.h" }
+  files { "*.c", "include/*.h", "iathook/iathook.h" }
   entrypoint "DllMain"
   filter "platforms:Win32"
     targetname "openspy.x86"
