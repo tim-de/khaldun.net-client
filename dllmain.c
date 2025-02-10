@@ -54,6 +54,8 @@
 #include "include/picoupnp.h"
 #include "iathook/iathook.h"
 
+#include "include/ping-khaldun.h"
+
 // Redirect all bind() to 0.0.0.0
 static int force_bind_ip = 1;
 

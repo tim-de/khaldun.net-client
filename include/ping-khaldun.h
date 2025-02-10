@@ -7,6 +7,4 @@
 
 const char khaldun_url[] = "khaldun.net";
 
-int ping_khaldun();
-
 #endif // PING_KHALDUN_H
