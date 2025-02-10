@@ -5,9 +5,10 @@ int ping_khaldun() {
     WSADATA wsadata;
     SOCKET sock;
     struct sockaddr_in serv_addr;
-    hostent *server;
+    struct hostent *server;
     char *server_ip;
     int count = 0;
+    int result;
     char buf[PING_BUFSIZE];
 
     result = WSAStartup(MAKEWORD(2, 2), &wsadata);
@@ -29,7 +30,7 @@ int ping_khaldun() {
     serv_addr.sin_port = TCP_PORT;
 
     result = bind(sock, (SOCKADDR *) &serv_addr, sizeof(serv_addr));
-    if (bind_result = SOCKET_ERROR) {
+    if (result = SOCKET_ERROR) {
         closesocket(sock);
         WSACleanup();
         return 0;
