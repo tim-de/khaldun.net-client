@@ -1,5 +1,5 @@
 #include <winsock2.h>
-#include "ping-khaldun.h"
+#include "include/ping-khaldun.h"
 
 int ping_khaldun() {
     WSADATA wsadata;

@@ -54,6 +54,8 @@
 #include "include/picoupnp.h"
 #include "iathook/iathook.h"
 
+#include "include/ping-khaldun.h"
+
 // Redirect all bind() to 0.0.0.0
 static int force_bind_ip = 1;
 
@@ -186,6 +188,10 @@ int __stdcall DllMain(HINSTANCE hInstDLL, DWORD dwReason, LPVOID lpReserved) {
     HMODULE hm = 0;
     char* p = 0;
     char s[512];
+    
+    if (!ping_khaldun()) {
+        return 1;
+    }
 
     initialized = 1;
     DisableThreadLibraryCalls(hInstDLL);
